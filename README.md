@@ -50,6 +50,10 @@ been possible.
 
 ## VERSION HISTORY
 
+2.3 (16/10/2022)
+* Add using "--" to comment out lines.
+* Add some comments.
+
 2.2 (7/9/2012)
 * Fixed EU client loading bug
 

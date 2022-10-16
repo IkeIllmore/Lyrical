@@ -29,13 +29,17 @@ function LyricsBox:Load(lines)
 	end
 	while true do
 		e = s;
+		-- find end of line and store index to it in e
 		while e < lines:len() and lines:sub(e,e) ~= "\n" do
 			e = e + 1;
 		end
 		if e < lines:len() then
+			-- not the last line in the file so store text before line feed
 			self:AddItem(LyricsLine(self.mainwindow, lines:sub(s, e-1)));
+			-- start looking for next line at character after line feed
 			s = e + 1;
 		elseif e == lines:len() then
+			-- the last line in the file so store text and exit
 			self:AddItem(LyricsLine(self.mainwindow, lines:sub(s, e)));
 			break;
 		end

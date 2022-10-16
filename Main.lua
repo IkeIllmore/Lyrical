@@ -2,7 +2,7 @@ import "Turbine.UI";
 import "Turbine.UI.Lotro";
 import "Astleigh.Lyrical";
 
-lyricalVersion = "2.2";
+lyricalVersion = "2.3";
 
 lyricalCommand = Turbine.ShellCommand();
 

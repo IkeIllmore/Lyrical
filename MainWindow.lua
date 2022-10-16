@@ -229,8 +229,10 @@ function MainWindow:Advance()
 	while true do
 		i = i + 1;
 		if i > self.lyricsBox:GetItemCount() then
+			-- at last line so go back to beginning
 			i = 0;
 		elseif self.lyricsBox:GetItem(i).enabled then
+			-- found a line that is enabled so selected it
 			break;
 		end
 	end

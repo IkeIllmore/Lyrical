@@ -11,7 +11,7 @@ function LyricsLine:Constructor(mainwindow, line)
 	self:SetMultiline(false);
 	self:SetText(line);
 
-	if string.find(line, "%w+") then
+	if string.find(line, "%w+") and string.sub(line, 1, 2) ~= "--" then
 		self.enabled = true;
 		self.quickslot = Turbine.UI.Lotro.Quickslot();
 		self.quickslot:SetParent(mainwindow);

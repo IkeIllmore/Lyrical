@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Plugin>
+	<Information>
+		<Name>Lyrical</Name>
+		<Author>Astleigh Mondegreen/Ike Illmore</Author>
+		<Version>2.3</Version>
+        <Description>Lyrical is a plugin to sing song lyrics. It can also be used to recite tales or poems.</Description>
+        <Image>Astleigh/Lyrical/lyrical.tga</Image>
+	</Information>
+	<Package>Astleigh.Lyrical.Main</Package>
+</Plugin>

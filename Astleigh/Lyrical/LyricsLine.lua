@@ -44,6 +44,7 @@ function LyricsLine:Constructor(mainwindow, line)
 		end
 	else
 		self.enabled = false;
+		self:SetForeColor(Turbine.UI.Color(0.4, 0.4, 0.4));
 	end
 	self:Layout();
 end

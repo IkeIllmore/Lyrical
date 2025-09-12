@@ -185,6 +185,34 @@ function MainWindow:Constructor()
 			self:GetHeight() - sender:GetHeight());
 	end
 
+	-- Hide UI when F12 is pressed
+	local hideUI = false;
+	local wasVisible;
+	self:SetWantsKeyEvents(true);
+	self.KeyDown = function(sender, args)
+		if (args.Action == 268435635) then
+			if not hideUI then
+				hideUI = true;
+				if self:IsVisible() then
+					wasVisible = true;
+					self:SetVisible(false);
+				else
+					wasVisible = false;
+				end
+--				toggleWindow:SetVisible(false);
+			else
+				hideUI = false;
+				if wasVisible then
+					self:SetVisible(true);
+				end
+--				if (Settings.ToggleVisible == "yes") then
+--					toggleWindow:SetVisible(true);
+--				end
+			end
+		end
+	end
+
+
 	self:Layout();
 	self:LoadPage(self.page);
 end

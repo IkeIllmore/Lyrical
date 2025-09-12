@@ -332,7 +332,7 @@ function MainWindow:LoadPage(page)
 	if #self.lyrics == 1 then
 		self.deleteButton:SetEnabled(false);
 	else
-		self.deleteButton:SetEnabled(true);
+		self.deleteButton:SetEnabled(false); -- Disable delete key
 	end
 	self:Init();
 end

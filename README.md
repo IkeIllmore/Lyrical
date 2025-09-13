@@ -50,6 +50,13 @@ been possible.
 
 ## VERSION HISTORY
 
+2.3 (12/09/2025)
+* Hide the Lyrical window when the UI is hidden with the F12 key.
+
+2.3 (13/02/2025)
+* Add using "%" to comment out lines.
+* Display commented out lines in a darker colour.
+
 2.3 (16/10/2022)
 * Add using "--" to comment out lines.
 * Add some comments.
